@@ -8,11 +8,15 @@
 
 header{
     height: 70px;
-    background-color: blue;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
 }
 
 .wrapper{
     display: flex;
+    margin-top: 70px;
 }
 
 
@@ -35,3 +39,29 @@ aside{
 }
 
 /* END STRUCTURE */
+
+/* HEADER  */
+
+.height-70{
+    height: 70px;
+}
+
+.width-70{
+    width: 70%;
+}
+
+.bg-grey{
+    background-color: lightgrey;
+}
+
+.logo-mobile-size{
+    width: 50px;
+}
+
+.color-yellow{
+    color: #ff8f00;
+}
+
+/* END HEADER  */
+
+/* ASIDE  */
