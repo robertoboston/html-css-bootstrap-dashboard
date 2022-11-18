@@ -29,13 +29,12 @@ aside{
 .top-bar{
     height: 250px;
     background-color: #1b72e8;
-    width: calc(100vw - 70px);
 }
 
 .main-content{
-    height: calc(100vh - 320px);
+    height: calc(100vh - 70px);
     width: calc(100vw - 70px);
-    background-color: crimson;
+    overflow-y: auto;
 }
 
 /* END STRUCTURE */
@@ -104,6 +103,14 @@ aside{
     color: white;
 }
 
+/* END ASIDE  */
+
+/* MAIN  */
+
+.card-image img{
+    width: 100%;
+}
+
 
 /* MEDIA QUERY */
 
@@ -111,12 +118,11 @@ aside{
 
     .top-bar{
         height: 200px;
-        width: calc(100vw - 140px);
 
     }
 
     .main-content{
-        height: calc(100vh - 270px);
+        height: calc(100vh - 70px);
         width: calc(100vw - 140px);
        
     }
