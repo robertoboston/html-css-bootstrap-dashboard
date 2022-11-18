@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* STRUCTURE */
+
+header{
+    height: 70px;
+    background-color: blue;
+}
+
+.wrapper{
+    display: flex;
+}
+
+
+aside{
+    width: 80px;
+    background-color: brown;
+    height: calc(100vh - 70px);
+}
+
+.top-bar{
+    height: 200px;
+    background-color: aqua;
+    width: calc(100vw - 70px);
+}
+
+.main-content{
+    height: calc(100vh - 270px);
+    width: calc(100vw - 70px);
+    background-color: crimson;
+}
+
+/* END STRUCTURE */
