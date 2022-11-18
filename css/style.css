@@ -98,6 +98,12 @@ aside{
     color: white;
 }
 
+.links-aside a{
+    padding: 9px 5px;
+    text-decoration: none;
+    color: white;
+}
+
 
 /* MEDIA QUERY */
 
@@ -105,12 +111,18 @@ aside{
 
     .top-bar{
         height: 200px;
+        width: calc(100vw - 140px);
+
     }
 
     .main-content{
         height: calc(100vh - 270px);
-        width: calc(100vw - 70px);
+        width: calc(100vw - 140px);
        
+    }
+    
+    aside{
+        width: 200px;
     }
 
 
