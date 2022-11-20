@@ -77,8 +77,9 @@ aside{
     background-color: white;
     border: none;
     
-    
 }
+
+
 
 
 /* END HEADER  */
@@ -133,6 +134,12 @@ aside{
     width: 100%;
 }
 
+/* END MAIN  */
+
+.badge:hover{
+    background-color:#1b447e
+}
+
 /* MEDIA QUERY */
 
 @media screen and (min-width:768px) {
@@ -152,6 +159,10 @@ aside{
         width: 200px;
     }
 
+    .offcanvas-width{
+        width:100%
+    }
 
-    
+
+
 }
