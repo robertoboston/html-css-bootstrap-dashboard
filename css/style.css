@@ -105,12 +105,22 @@ aside{
 
 /* END ASIDE  */
 
+/* TOP BAR */
+
+.btn-offcanvas{
+    background-color: #1b72e8;
+    border: 1px solid white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+
+}
+
 /* MAIN  */
 
 .card-image img{
     width: 100%;
 }
-
 
 /* MEDIA QUERY */
 

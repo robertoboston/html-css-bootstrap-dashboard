@@ -48,7 +48,7 @@
                 <i class="fa-solid fa-chart-simple"></i>
                 <i class="fa-solid fa-signal"></i>
               </div>
-              <div class="text-white d-flex flex-column links-aside">
+              <div class="text-white d-flex flex-column links-aside ms-3">
                 <a class="d-none d-md-block" href="">Home</a>
                 <a class="d-none d-md-block" href="">Stats</a>
                 <a class="d-none d-md-block" href="">Signals</a>
@@ -58,7 +58,7 @@
                 <div class="icon">
                     <i class="fa-solid fa-gear"></i>
                 </div>
-                <div class="text-white d-flex links-aside">
+                <div class="text-white d-flex links-aside ms-3">
                     <a class="d-none d-md-block" href="">Admin</a>
                 </div>
             </div>
@@ -75,13 +75,23 @@
                             <div class="col-12 col-md-2 order-md-3 mt-md-4">
                                 <div class="topbar-content">
                                     <span>Nuovo studente</span>
+                                    <button class="btn-offcanvas ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
+                                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                      <div class="offcanvas-header">
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                      </div>
+                                      <div class="offcanvas-body">
+                                        ...
+                                      </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 order-md-1 mt-4">
                                 <div class="topbar-content">
                                     <div>
                                         <h1 class="d-inline fw-normal">Boolean</h1>
-                                        <span class="badge rounded-pill bg-color fw-light">Piano Blaze</span>
+                                        <a href=""><span class="badge rounded-pill bg-color fw-light">Piano Blaze</span></a>
                                     </div>
                                     <div class="mt-md-2">
                                         <span class="badge rounded-pill bg-color fw-light">3 App</span>
@@ -111,64 +121,34 @@
                                  <h2>Prossime classi</h2> 
                                 </div>
                                 <table class="table">
-                                    <thead>
-                                      <tr>
-                                        <th scope="col">#</th>
-                                        <th scope="col">First</th>
-                                        <th scope="col">Last</th>
-                                        <th scope="col">Handle</th>
-                                      </tr>
-                                    </thead>
-                                    <tbody>
-                                      <tr>
-                                        <th scope="row">1</th>
-                                        <td>Mark</td>
-                                        <td>Otto</td>
-                                        <td>@mdo</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">2</th>
-                                        <td>Jacob</td>
-                                        <td>Thornton</td>
-                                        <td>@fat</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                      <tr>
-                                        <th scope="row">3</th>
-                                        <td colspan="2">Larry the Bird</td>
-                                        <td>@twitter</td>
-                                      </tr>
-                                    </tbody>
-                                  </table>
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">#</th>
+                                      <th scope="col">First</th>
+                                      <th scope="col">Last</th>
+                                      <th scope="col">Handle</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>Mark</td>
+                                      <td>Otto</td>
+                                      <td>@mdo</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">2</th>
+                                      <td>Jacob</td>
+                                      <td>Thornton</td>
+                                      <td>@fat</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">3</th>
+                                      <td colspan="2">Larry the Bird</td>
+                                      <td>@twitter</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
                               </div>
                               <div class="card mt-5">
                                 <div class="card-header">
@@ -221,28 +201,41 @@
                                 </div>
                                 <div class="card m-3">
                                     <ul class="list-group list-group-flush">
-                                      <li class="list-group-item">An item</li>
-                                      <li class="list-group-item">A second item</li>
-                                      <li class="list-group-item">A third item</li>
+                                      <li class="list-group-item"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label ms-2" for="flexCheckDefault">
+                                          Kickoff nuove classi
+                                        </label>
+                                      </li>
+                                      <li class="list-group-item"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label ms-2" for="flexCheckDefault">
+                                          Lezione su Bootstrap 5 in classe #75
+                                        </label>
+                                      </li>
+                                      <li class="list-group-item"><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label ms-2" for="flexCheckDefault">
+                                          Controllare username github studenti
+                                        </label>
+                                      </li>
                                     </ul>
                                   </div>
                             </div>
-                            <div class="card mt-5 card-image">
+                            <div class="card mt-5 p-4">
+                              <div class="card card-image">
                                 <img src="./img/stats.jpeg" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                  <h5 class="card-title">Utenti attivi</h5>
+                                  <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
                                 </div>
                                 <ul class="list-group list-group-flush">
-                                  <li class="list-group-item">An item</li>
-                                  <li class="list-group-item">A second item</li>
-                                  <li class="list-group-item">A third item</li>
+                                  <li class="list-group-item">Gennaio: 1200 </li>
+                                  <li class="list-group-item">Febbraio: 800</li>
+                                  <li class="list-group-item">Marzo: 1500</li>
                                 </ul>
                                 <div class="card-body">
-                                  <a href="#" class="card-link">Card link</a>
-                                  <a href="#" class="card-link">Another link</a>
+                                  <a href="#" class="card-link">Visualizza report approfondito</a>
                                 </div>
                               </div>
+                            </div>
                         </div>
                     </div>
                 </div>
