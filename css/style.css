@@ -61,12 +61,23 @@ aside{
     background-color: #165bba;
 }
 
+.color-grey{
+    color: rgb(73, 68, 68);
+}
+
 
 
 /* HEADER  */
 
 .logo-mobile-size{
     width: 50px;
+}
+
+.btn-header{
+    background-color: white;
+    border: none;
+    
+    
 }
 
 
