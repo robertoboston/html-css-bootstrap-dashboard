@@ -87,13 +87,13 @@
                                     <button class="btn-offcanvas ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus"></i></button>
                                     <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                       <div class="offcanvas-header">
-                                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                        <h5 class="offcanvas-title" id="offcanvasRightLabel"></h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                       </div>
                                       <div class="offcanvas-body">
                                         <form class="row g-3">
                                           <div class="col-md-6">
-                                            <label for="inputEmail4" class="form-label">Email</label>
+                                            <label for="inputEmail4" class="form-label">Nome</label>
                                             <input type="email" class="form-control" id="inputEmail4">
                                           </div>
                                           <div class="col-md-6">
@@ -172,12 +172,12 @@
                                 <div class="card-header">
                                  <h2>Prossime classi</h2> 
                                 </div>
-                                <table class="table">
+                                <table class="table table-hover">
                                   <thead>
                                     <tr>
                                       <th scope="col">Nome</th>
-                                      <th scope="col">Data inizio</th>
-                                      <th scope="col">ROI</th>
+                                      <th class="d-none d-md-table-cell" scope="col">Data inizio</th>
+                                      <th class="d-none d-md-table-cell" scope="col">ROI</th>
                                       <th scope="col">Stato</th>
                                       <th scope="col">Azioni</th>
                                     </tr>
@@ -185,59 +185,59 @@
                                   <tbody>
                                     <tr>
                                       <td><img src="./img/class-avatar.jpg" alt=""> Classe 75</td>
-                                      <td>15 Febbraio 2015</td>
-                                      <td>20%</td>
+                                      <td class="d-none d-md-table-cell">15 Febbraio 2021</td>
+                                      <td class="d-none d-md-table-cell">20%</td>
                                       <td><span class="badge rounded-pill bg-success fw-light">Done</span></td>
-                                      <td><span class="pencil"><i class="fa-solid fa-pencil"></i></span><span class="pencil ms-2"><i class="fa-solid fa-trash"></i></span></td>
+                                      <td><button class="pencil"><i class="fa-solid fa-pencil"></i></button><button class="pencil"><i class="fa-solid fa-trash"></i></button></td>
                                     </tr>
                                     <tr>
                                       <td><img src="./img/class-avatar.jpg" alt=""> Classe 75</td>
-                                      <td>15 Febbraio 2015</td>
-                                      <td>20%</td>
+                                      <td class="d-none d-md-table-cell">16 Febbraio 2021</td>
+                                      <td class="d-none d-md-table-cell">20%</td>
                                       <td><span class="badge rounded-pill bg-success fw-light">Done</span></td>
-                                      <td><span class="pencil"><i class="fa-solid fa-pencil"></i></span><span class="pencil ms-2"><i class="fa-solid fa-trash"></i></span></td>
+                                      <td><button class="pencil"><i class="fa-solid fa-pencil"></i></button><button class="pencil"><i class="fa-solid fa-trash"></i></button></td>
                                     </tr>
                                     <tr>
                                       <td><img src="./img/class-avatar.jpg" alt=""> Classe 75</td>
-                                      <td>15 Febbraio 2015</td>
-                                      <td>20%</td>
-                                      <td><span class="badge rounded-pill bg-success fw-light">Done</span></td>
-                                      <td><span class="pencil"><i class="fa-solid fa-pencil"></i></span><span class="pencil ms-2"><i class="fa-solid fa-trash"></i></span></td>
+                                      <td class="d-none d-md-table-cell">17 Febbraio 2021</td>
+                                      <td class="d-none d-md-table-cell">20%</td>
+                                      <td><span class="badge rounded-pill bg-warning fw-light">Process</span></td>
+                                      <td><button class="pencil"><i class="fa-solid fa-pencil"></i></button><button class="pencil"><i class="fa-solid fa-trash"></i></button></td>
                                     </tr>
                                     <tr>
                                       <td><img src="./img/class-avatar.jpg" alt=""> Classe 75</td>
-                                      <td>15 Febbraio 2015</td>
-                                      <td>20%</td>
+                                      <td class="d-none d-md-table-cell">18 Febbraio 2021</td>
+                                      <td class="d-none d-md-table-cell">20%</td>
                                       <td><span class="badge rounded-pill bg-success fw-light">Done</span></td>
-                                      <td><span class="pencil"><i class="fa-solid fa-pencil"></i></span><span class="pencil ms-2"><i class="fa-solid fa-trash"></i></span></td>
+                                      <td><button class="pencil"><i class="fa-solid fa-pencil"></i></button><button class="pencil"><i class="fa-solid fa-trash"></i></button></td>
                                     </tr>
                                     <tr>
                                       <td><img src="./img/class-avatar.jpg" alt=""> Classe 75</td>
-                                      <td>15 Febbraio 2015</td>
-                                      <td>20%</td>
-                                      <td><span class="badge rounded-pill bg-success fw-light">Done</span></td>
-                                      <td><span class="pencil"><i class="fa-solid fa-pencil"></i></span><span class="pencil ms-2"><i class="fa-solid fa-trash"></i></span></td>
+                                      <td class="d-none d-md-table-cell">19 Febbraio 2021</td>
+                                      <td class="d-none d-md-table-cell">20%</td>
+                                      <td><span class="badge rounded-pill bg-danger fw-light">Failed</span></td>
+                                      <td><button class="pencil"><i class="fa-solid fa-pencil"></i></button><button class="pencil"><i class="fa-solid fa-trash"></i></button></td>
                                     </tr>
                                     <tr>
                                       <td><img src="./img/class-avatar.jpg" alt=""> Classe 75</td>
-                                      <td>15 Febbraio 2015</td>
-                                      <td>20%</td>
+                                      <td class="d-none d-md-table-cell">20 Febbraio 2021</td>
+                                      <td class="d-none d-md-table-cell">20%</td>
                                       <td><span class="badge rounded-pill bg-success fw-light">Done</span></td>
-                                      <td><span class="pencil"><i class="fa-solid fa-pencil"></i></span><span class="pencil ms-2"><i class="fa-solid fa-trash"></i></span></td>
+                                      <td><button class="pencil"><i class="fa-solid fa-pencil"></i></button><button class="pencil"><i class="fa-solid fa-trash"></i></button></td>
                                     </tr>
                                     <tr>
                                       <td><img src="./img/class-avatar.jpg" alt=""> Classe 75</td>
-                                      <td>15 Febbraio 2015</td>
-                                      <td>20%</td>
-                                      <td><span class="badge rounded-pill bg-success fw-light">Done</span></td>
-                                      <td><span class="pencil"><i class="fa-solid fa-pencil"></i></span><span class="pencil ms-2"><i class="fa-solid fa-trash"></i></span></td>
+                                      <td class="d-none d-md-table-cell">21 Febbraio 2021</td>
+                                      <td class="d-none d-md-table-cell">20%</td>
+                                      <td><span class="badge rounded-pill bg-danger fw-light">failed</span></td>
+                                      <td><button class="pencil"><i class="fa-solid fa-pencil"></i></button><button class="pencil"><i class="fa-solid fa-trash"></i></button></td>
                                     </tr>
                                     <tr>
                                       <td><img src="./img/class-avatar.jpg" alt=""> Classe 75</td>
-                                      <td>15 Febbraio 2015</td>
-                                      <td>20%</td>
+                                      <td class="d-none d-md-table-cell">22 Febbraio 2022</td>
+                                      <td class="d-none d-md-table-cell">20%</td>
                                       <td><span class="badge rounded-pill bg-success fw-light">Done</span></td>
-                                      <td><span class="pencil"><i class="fa-solid fa-pencil"></i></span><span class="pencil ms-2"><i class="fa-solid fa-trash"></i></span></td>
+                                      <td><button class="pencil"><i class="fa-solid fa-pencil"></i></button><button class="pencil"><i class="fa-solid fa-trash"></i></button></td>
                                     </tr>
                                   </tbody>
                                 </table>
