@@ -135,12 +135,12 @@ aside{
 }
 
 td img{
-    width: 25px;
+    width: 40px;
 }
 
 .pencil{
     background-color: white;
-    padding: 2px 5px;
+    padding: 5px;
     border-radius: 5px;
     border: 1px solid black;
     margin-right: 2px;
