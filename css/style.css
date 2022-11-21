@@ -158,6 +158,12 @@ td img{
     background-color: grey;
 }
 
+.icon a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+    
+
+}
+
 /* MEDIA QUERY */
 
 @media screen and (min-width:768px) {
