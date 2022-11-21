@@ -7,7 +7,6 @@
 /* STRUCTURE */
 
 header{
-    height: 70px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -64,7 +63,6 @@ aside{
 .color-grey{
     color: rgb(73, 68, 68);
 }
-
 
 
 /* HEADER  */
@@ -134,11 +132,24 @@ aside{
     width: 100%;
 }
 
+td img{
+    width: 25px;
+    vertical-align: middle;
+}
+
+.pencil{
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 /* END MAIN  */
 
 .badge:hover{
     background-color:#1b447e
 }
+
+
 
 /* MEDIA QUERY */
 
@@ -159,10 +170,18 @@ aside{
         width: 200px;
     }
 
-    .offcanvas-width{
-        width:100%
+    #offcanvasRight{
+        width: 50%
+
     }
 
 
+}
 
+@media screen and (max-width:768px) {
+
+    #offcanvasRight{
+        width: 100%;
+
+    }
 }

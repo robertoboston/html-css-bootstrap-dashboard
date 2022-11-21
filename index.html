@@ -21,13 +21,13 @@
                           <a class="navbar-brand d-lg-none"><img class="logo-mobile-size" src="./img/mobile-logo.png" alt=""></a>
                           <a class="navbar-brand"><img class="d-none d-lg-block" src="./img/logo.svg" alt=""></a>
                           <form class="d-flex width-70" role="search">
-                            <input class="form-control me-2 width-100 bg-grey" type="search" placeholder="Prova a cercare: Lezioni di laravel" aria-label="Search">
+                            <input class="form-control me-2 bg-grey" type="search" placeholder="Prova a cercare: Lezioni di laravel" aria-label="Search">
                           </form>
                           <div>
                             <div class="d-inline d-none d-lg-inline-block">
-                                <a href=""><i class="fa-solid fa-list me-2 color-grey"></i></a>
-                                <a href=""><i class="fa-regular fa-circle-question me-2 color-grey"></i></a>
-                                <a href=""><i class="fa-solid fa-ellipsis-vertical me-2 color-grey"></i></a>
+                                <a href=""><i class="fa-solid fa-list me-4 color-grey"></i></a>
+                                <a href=""><i class="fa-regular fa-circle-question me-4 color-grey"></i></a>
+                                <a href=""><i class="fa-solid fa-ellipsis-vertical me-4 color-grey"></i></a>
                             </div>
                             <div class="btn-group">
                               <button type="button" class="btn-header" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
@@ -91,7 +91,50 @@
                                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                       </div>
                                       <div class="offcanvas-body">
-                                        ...
+                                        <form class="row g-3">
+                                          <div class="col-md-6">
+                                            <label for="inputEmail4" class="form-label">Email</label>
+                                            <input type="email" class="form-control" id="inputEmail4">
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label for="inputPassword4" class="form-label">Password</label>
+                                            <input type="password" class="form-control" id="inputPassword4">
+                                          </div>
+                                          <div class="col-12">
+                                            <label for="inputAddress" class="form-label">Address</label>
+                                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                          </div>
+                                          <div class="col-12">
+                                            <label for="inputAddress2" class="form-label">Address 2</label>
+                                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                          </div>
+                                          <div class="col-md-6">
+                                            <label for="inputCity" class="form-label">City</label>
+                                            <input type="text" class="form-control" id="inputCity">
+                                          </div>
+                                          <div class="col-md-4">
+                                            <label for="inputState" class="form-label">State</label>
+                                            <select id="inputState" class="form-select">
+                                              <option selected>Choose...</option>
+                                              <option>...</option>
+                                            </select>
+                                          </div>
+                                          <div class="col-md-2">
+                                            <label for="inputZip" class="form-label">Zip</label>
+                                            <input type="text" class="form-control" id="inputZip">
+                                          </div>
+                                          <div class="col-12">
+                                            <div class="form-check">
+                                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                                              <label class="form-check-label" for="gridCheck">
+                                                Check me out
+                                              </label>
+                                            </div>
+                                          </div>
+                                          <div class="col-12">
+                                            <button type="submit" class="btn btn-primary">Sign in</button>
+                                          </div>
+                                        </form>
                                       </div>
                                     </div>
                                 </div>
@@ -132,29 +175,69 @@
                                 <table class="table">
                                   <thead>
                                     <tr>
-                                      <th scope="col">#</th>
-                                      <th scope="col">First</th>
-                                      <th scope="col">Last</th>
-                                      <th scope="col">Handle</th>
+                                      <th scope="col">Nome</th>
+                                      <th scope="col">Data inizio</th>
+                                      <th scope="col">ROI</th>
+                                      <th scope="col">Stato</th>
+                                      <th scope="col">Azioni</th>
                                     </tr>
                                   </thead>
                                   <tbody>
                                     <tr>
-                                      <th scope="row">1</th>
-                                      <td>Mark</td>
-                                      <td>Otto</td>
-                                      <td>@mdo</td>
+                                      <td><img src="./img/class-avatar.jpg" alt=""> Classe 75</td>
+                                      <td>15 Febbraio 2015</td>
+                                      <td>20%</td>
+                                      <td><span class="badge rounded-pill bg-success fw-light">Done</span></td>
+                                      <td><span class="pencil"><i class="fa-solid fa-pencil"></i></span><span class="pencil ms-2"><i class="fa-solid fa-trash"></i></span></td>
                                     </tr>
                                     <tr>
-                                      <th scope="row">2</th>
-                                      <td>Jacob</td>
-                                      <td>Thornton</td>
-                                      <td>@fat</td>
+                                      <td><img src="./img/class-avatar.jpg" alt=""> Classe 75</td>
+                                      <td>15 Febbraio 2015</td>
+                                      <td>20%</td>
+                                      <td><span class="badge rounded-pill bg-success fw-light">Done</span></td>
+                                      <td><span class="pencil"><i class="fa-solid fa-pencil"></i></span><span class="pencil ms-2"><i class="fa-solid fa-trash"></i></span></td>
                                     </tr>
                                     <tr>
-                                      <th scope="row">3</th>
-                                      <td colspan="2">Larry the Bird</td>
-                                      <td>@twitter</td>
+                                      <td><img src="./img/class-avatar.jpg" alt=""> Classe 75</td>
+                                      <td>15 Febbraio 2015</td>
+                                      <td>20%</td>
+                                      <td><span class="badge rounded-pill bg-success fw-light">Done</span></td>
+                                      <td><span class="pencil"><i class="fa-solid fa-pencil"></i></span><span class="pencil ms-2"><i class="fa-solid fa-trash"></i></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><img src="./img/class-avatar.jpg" alt=""> Classe 75</td>
+                                      <td>15 Febbraio 2015</td>
+                                      <td>20%</td>
+                                      <td><span class="badge rounded-pill bg-success fw-light">Done</span></td>
+                                      <td><span class="pencil"><i class="fa-solid fa-pencil"></i></span><span class="pencil ms-2"><i class="fa-solid fa-trash"></i></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><img src="./img/class-avatar.jpg" alt=""> Classe 75</td>
+                                      <td>15 Febbraio 2015</td>
+                                      <td>20%</td>
+                                      <td><span class="badge rounded-pill bg-success fw-light">Done</span></td>
+                                      <td><span class="pencil"><i class="fa-solid fa-pencil"></i></span><span class="pencil ms-2"><i class="fa-solid fa-trash"></i></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><img src="./img/class-avatar.jpg" alt=""> Classe 75</td>
+                                      <td>15 Febbraio 2015</td>
+                                      <td>20%</td>
+                                      <td><span class="badge rounded-pill bg-success fw-light">Done</span></td>
+                                      <td><span class="pencil"><i class="fa-solid fa-pencil"></i></span><span class="pencil ms-2"><i class="fa-solid fa-trash"></i></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><img src="./img/class-avatar.jpg" alt=""> Classe 75</td>
+                                      <td>15 Febbraio 2015</td>
+                                      <td>20%</td>
+                                      <td><span class="badge rounded-pill bg-success fw-light">Done</span></td>
+                                      <td><span class="pencil"><i class="fa-solid fa-pencil"></i></span><span class="pencil ms-2"><i class="fa-solid fa-trash"></i></span></td>
+                                    </tr>
+                                    <tr>
+                                      <td><img src="./img/class-avatar.jpg" alt=""> Classe 75</td>
+                                      <td>15 Febbraio 2015</td>
+                                      <td>20%</td>
+                                      <td><span class="badge rounded-pill bg-success fw-light">Done</span></td>
+                                      <td><span class="pencil"><i class="fa-solid fa-pencil"></i></span><span class="pencil ms-2"><i class="fa-solid fa-trash"></i></span></td>
                                     </tr>
                                   </tbody>
                                 </table>
