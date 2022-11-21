@@ -7,6 +7,7 @@
 /* STRUCTURE */
 
 header{
+    height: 70px;
     position: fixed;
     width: 100%;
     top: 0;
@@ -64,6 +65,10 @@ aside{
     color: rgb(73, 68, 68);
 }
 
+.background-grey{
+    background-color: #f8f9fa;
+}
+
 
 /* HEADER  */
 
@@ -76,9 +81,6 @@ aside{
     border: none;
     
 }
-
-
-
 
 /* END HEADER  */
 
@@ -134,7 +136,6 @@ aside{
 
 td img{
     width: 25px;
-    vertical-align: middle;
 }
 
 .pencil{
@@ -145,18 +146,17 @@ td img{
     margin-right: 2px;
 }
 
-.pencil:hover {
-    background-color: grey;
-}
-
-
 /* END MAIN  */
+
+/* HOOVER  */
 
 .badge:hover{
     background-color:#1b447e
 }
 
-
+.pencil:hover {
+    background-color: grey;
+}
 
 /* MEDIA QUERY */
 
